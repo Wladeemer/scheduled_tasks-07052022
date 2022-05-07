@@ -22,14 +22,13 @@ def dailytasks():
 
 
 def main():
-#	dailytasks()
-    schedule.every(4).seconds.do(dailytasks)
 
-#	schedule.every(5).minutes.do(dailytasks)
-#	schedule.every().hour.do(dailytasks)
+    #schedule.every(4).seconds.do(dailytasks)
+	#schedule.every(5).minutes.do(dailytasks)
+	#schedule.every().hour.do(dailytasks)
     #schedule.every().day.at('15:45').do(dailytasks)
-    # schedule.every().thursday.do(dailytasks)
-    #schedule.every().friday.at('22:00').do(collect_data)
+    #schedule.every().thursday.do(dailytasks)
+    #schedule.every().saturday.at('19:59').do(dailytasks)
 
     while True:
         schedule.run_pending()
